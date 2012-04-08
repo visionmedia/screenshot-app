@@ -8,7 +8,7 @@ var rasterize = require('../lib/rasterize')
   , join = path.join
   , fs = require('fs');
 
-var dir = app.get('screenshots')
+var dir = app.set('screenshots')
   , db = app.db;
 
 /*
@@ -86,8 +86,8 @@ app.get('/:url(*)', ratelimit(60, 10), function(req, res, next){
 
   var options = {
       path: join(dir, id + '.png')
-    , viewportWidth: req.query.width || app.get('default viewport width')
-    , viewportHeight: req.query.height || app.get('default viewport height')
+    , viewportWidth: req.query.width || app.set('default viewport width')
+    , viewportHeight: req.query.height || app.set('default viewport height')
   };
 
   console.log('screenshot - rasterizing %s %dx%d'

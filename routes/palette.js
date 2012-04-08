@@ -12,7 +12,7 @@ var db = app.db;
 
 app.on('screenshot', function(url, path, id){
   console.log('palette - reading %s', path);
-  colors(path, app.get('colors'), function(err, colors){
+  colors(path, app.set('colors'), function(err, colors){
     if (err) return console.error(err.stack);
     console.log('palette - colors computed');
 
