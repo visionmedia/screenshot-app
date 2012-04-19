@@ -1,4 +1,3 @@
-
 # Screenshot application
 
   A simple screenshot application & web service powered by [Express](http://expressjs.com), [Redis](http://redis.io), [node-canvas](http://github.com/learnboost/node-canvas), [palette](http://github.com/visionmedia/palette), and [PhantomJS](http://www.phantomjs.org/).
@@ -11,7 +10,9 @@
   then clone this repo and install the deps:
 
 ```
-$ npm install
+$ git clone https://github.com/visionmedia/screenshot-app.git
+$ cd screenshot-app
+$ npm install -d
 ```
 
   Run the app:
