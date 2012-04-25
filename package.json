@@ -9,5 +9,8 @@
     , "redis": "0.7.x"
     , "canvas": "0.8.x"
     , "stylus": "0.21.x"
+    , "connect": "*"
+    , "mime": "*"
+    , "debug": "*"
   }
 }
