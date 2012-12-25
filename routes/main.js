@@ -1,5 +1,4 @@
 
-
 var rasterize = require('../lib/rasterize')
   , ratelimit = require('../lib/ratelimit')
   , Batch = require('../lib/batch')
@@ -23,7 +22,7 @@ app.get('/', function(req, res, next){
  * GET stats.
  */
 
-app.get('/stats', function(req, res){
+app.get('/stats', function(req, res, next){
   db.hgetall('screenshot:stats', function(err, obj){
     if (err) return next(err);
     res.send(obj);
