@@ -7,7 +7,7 @@
 ## Setup
 
   First [install](http://code.google.com/p/phantomjs/wiki/Installation) phantomjs,
-  then clone this repo and install the deps:
+  then clone this repo, install Redis and install the deps:
 
 ```
 $ git clone https://github.com/visionmedia/screenshot-app.git
