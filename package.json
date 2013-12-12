@@ -7,7 +7,7 @@
     , "jade": "*"
     , "palette": "*"
     , "redis": "0.7.x"
-    , "canvas": "0.8.x"
+    , "canvas": "~1.1.2"
     , "stylus": "0.21.x"
   }
 }
