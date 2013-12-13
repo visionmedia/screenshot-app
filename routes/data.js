@@ -7,7 +7,7 @@ var db = app.db;
  */
 
 app.on('screenshot', function(url, path, id){
-  var now = Date.now();
+  var now = "" + Date.now();
   console.log('screenshot - saving meta-data');
   db.hset('screenshot:url:id', url, id);
   db.zadd('screenshot:ids', now, id);
