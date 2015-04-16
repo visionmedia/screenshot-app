@@ -10,6 +10,8 @@
       "express": "https://github.com/visionmedia/express/tarball/master"
     , "jade": "*"
     , "palette": "*"
+    , "morgan": "*"
+    , "errorhandler": "*"
     , "redis": "0.7.x"
     , "canvas": "~1.1.2"
     , "stylus": "0.21.x"
