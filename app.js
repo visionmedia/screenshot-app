@@ -22,7 +22,7 @@ app.set('default viewport width', 1024);
 app.set('default viewport height', 600);
 app.set('colors', 3);
 app.set('root', __dirname);
-app.use(logger);
+app.use(logger('dev'));
 app.use(stylus.middleware({ src: __dirname + '/public' }));
 app.use(express.static(__dirname + '/public'));
 
